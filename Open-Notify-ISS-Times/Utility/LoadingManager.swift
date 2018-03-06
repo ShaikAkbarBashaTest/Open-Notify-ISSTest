@@ -27,7 +27,7 @@ class LoadingManager{
     }
     
     
-    
+    //To show progress Indicator
     open func showActivityIndicatory(uiView: UIView) {
         container.frame = uiView.frame
         container.center = uiView.center
@@ -48,7 +48,7 @@ class LoadingManager{
         uiView.addSubview(container)
         activityIndicator.startAnimating()
     }
-    
+    //To hide progress Indicator
     open func hideActivityIndicator(uiView: UIView) {
         activityIndicator.stopAnimating()
         container.removeFromSuperview()

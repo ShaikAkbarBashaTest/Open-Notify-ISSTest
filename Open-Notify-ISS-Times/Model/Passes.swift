@@ -22,7 +22,7 @@ struct PassesModal {
     init(jsonDict: JSONDict) {
         //      trip_details_ID = jsonDict["TRIP_DETAILS_ID"] as! Int
         duration = jsonDict["duration"] as! Int64
-        durationInString = String(format: "%lld", duration)
+        durationInString = String(format: "%lld seconds", duration)
         risetime = jsonDict["risetime"] as! Int64
         let timeInReadableFormat = Utils.sharedInstance.stringFromTimeInterval(value: risetime)
         //let timeVal = self.convertTheTimeToDate(value: timeInSec_ID)

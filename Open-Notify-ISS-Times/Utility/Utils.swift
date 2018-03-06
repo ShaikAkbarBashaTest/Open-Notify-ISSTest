@@ -16,14 +16,14 @@ let baseURL = "http://api.open-notify.org/iss-pass.json?"
 
 
 class Utils {
-    
+    //Create Shared instance
     open class var sharedInstance: Utils {
         struct Static {
             static let instance: Utils = Utils()
         }
         return Static.instance
     }
- 
+ //convert the rise time into Readable time stampe means in days..hours and minutes
     func stringFromTimeInterval(value : Int64) -> String {
         
         let days = value / 86400;
@@ -46,7 +46,7 @@ class Utils {
         if minutes != 0 {
             result = result + String(format: "%d mins ",minutes)
         }
-        
+        //To handle Seconds
 //        if seconds != 0 {
 //            result = result + String(format: "%d secs",seconds)
 //        }

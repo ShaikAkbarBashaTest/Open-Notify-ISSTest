@@ -11,8 +11,9 @@
 import UIKit
 
 class PassesListViewCellTableViewCell: UITableViewCell {
-
+    //Lable to display Time data
     @IBOutlet weak var timeLable: UILabel!
+    //Lable to display Duration in seconds
     @IBOutlet weak var durationLable: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
