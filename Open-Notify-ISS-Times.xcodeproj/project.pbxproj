@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E7B19B48C8E901E87439F31 /* Pods_Open_Notify_ISS_Times.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C9D525AA3C9335F7A97568 /* Pods_Open_Notify_ISS_Times.framework */; };
 		D54A18B8204DC9B10026A6E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A18B7204DC9B10026A6E0 /* AppDelegate.swift */; };
 		D54A18BA204DC9B10026A6E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A18B9204DC9B10026A6E0 /* ViewController.swift */; };
 		D54A18BD204DC9B10026A6E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54A18BB204DC9B10026A6E0 /* Main.storyboard */; };
 		D54A18BF204DC9B10026A6E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54A18BE204DC9B10026A6E0 /* Assets.xcassets */; };
 		D54A18C2204DC9B10026A6E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54A18C0204DC9B10026A6E0 /* LaunchScreen.storyboard */; };
+		D54A18CB204E768A0026A6E0 /* Passes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A18CA204E768A0026A6E0 /* Passes.swift */; };
+		D54A18CF204E76ED0026A6E0 /* PassesListViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A18CD204E76ED0026A6E0 /* PassesListViewCellTableViewCell.swift */; };
+		D54A18D0204E76ED0026A6E0 /* PassesListViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D54A18CE204E76ED0026A6E0 /* PassesListViewCellTableViewCell.xib */; };
+		D54A18D3204E77C40026A6E0 /* ViewController+APICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A18D2204E77C40026A6E0 /* ViewController+APICalls.swift */; };
+		D54A18D6204E91A70026A6E0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A18D5204E91A70026A6E0 /* Utils.swift */; };
+		D54A18D8204E94840026A6E0 /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A18D7204E94840026A6E0 /* LoadingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32C9D525AA3C9335F7A97568 /* Pods_Open_Notify_ISS_Times.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Open_Notify_ISS_Times.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		505B4FCCF67D0C4401591988 /* Pods-Open-Notify-ISS-Times.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Open-Notify-ISS-Times.release.xcconfig"; path = "Pods/Target Support Files/Pods-Open-Notify-ISS-Times/Pods-Open-Notify-ISS-Times.release.xcconfig"; sourceTree = "<group>"; };
+		8D3381864BC072F3732B629B /* Pods-Open-Notify-ISS-Times.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Open-Notify-ISS-Times.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Open-Notify-ISS-Times/Pods-Open-Notify-ISS-Times.debug.xcconfig"; sourceTree = "<group>"; };
 		D54A18B4204DC9B10026A6E0 /* Open-Notify-ISS-Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open-Notify-ISS-Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54A18B7204DC9B10026A6E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D54A18B9204DC9B10026A6E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,12 @@
 		D54A18BE204DC9B10026A6E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D54A18C1204DC9B10026A6E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D54A18C3204DC9B10026A6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54A18CA204E768A0026A6E0 /* Passes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passes.swift; sourceTree = "<group>"; };
+		D54A18CD204E76ED0026A6E0 /* PassesListViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassesListViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		D54A18CE204E76ED0026A6E0 /* PassesListViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassesListViewCellTableViewCell.xib; sourceTree = "<group>"; };
+		D54A18D2204E77C40026A6E0 /* ViewController+APICalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+APICalls.swift"; sourceTree = "<group>"; };
+		D54A18D5204E91A70026A6E0 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D54A18D7204E94840026A6E0 /* LoadingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E7B19B48C8E901E87439F31 /* Pods_Open_Notify_ISS_Times.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99183E5B49D8A8FDA9A9841B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D3381864BC072F3732B629B /* Pods-Open-Notify-ISS-Times.debug.xcconfig */,
+				505B4FCCF67D0C4401591988 /* Pods-Open-Notify-ISS-Times.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D54A18AB204DC9B10026A6E0 = {
 			isa = PBXGroup;
 			children = (
 				D54A18B6204DC9B10026A6E0 /* Open-Notify-ISS-Times */,
 				D54A18B5204DC9B10026A6E0 /* Products */,
+				99183E5B49D8A8FDA9A9841B /* Pods */,
+				F45B3E5F46E8A9C8C3094646 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +84,58 @@
 			children = (
 				D54A18B7204DC9B10026A6E0 /* AppDelegate.swift */,
 				D54A18B9204DC9B10026A6E0 /* ViewController.swift */,
+				D54A18D4204E91940026A6E0 /* Utility */,
+				D54A18D1204E77A00026A6E0 /* Network Layer */,
+				D54A18CC204E76B70026A6E0 /* View */,
+				D54A18C9204E76300026A6E0 /* Model */,
 				D54A18BB204DC9B10026A6E0 /* Main.storyboard */,
 				D54A18BE204DC9B10026A6E0 /* Assets.xcassets */,
 				D54A18C0204DC9B10026A6E0 /* LaunchScreen.storyboard */,
 				D54A18C3204DC9B10026A6E0 /* Info.plist */,
 			);
 			path = "Open-Notify-ISS-Times";
+			sourceTree = "<group>";
+		};
+		D54A18C9204E76300026A6E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D54A18CA204E768A0026A6E0 /* Passes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D54A18CC204E76B70026A6E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D54A18CD204E76ED0026A6E0 /* PassesListViewCellTableViewCell.swift */,
+				D54A18CE204E76ED0026A6E0 /* PassesListViewCellTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D54A18D1204E77A00026A6E0 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D54A18D2204E77C40026A6E0 /* ViewController+APICalls.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		D54A18D4204E91940026A6E0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D54A18D5204E91A70026A6E0 /* Utils.swift */,
+				D54A18D7204E94840026A6E0 /* LoadingManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F45B3E5F46E8A9C8C3094646 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32C9D525AA3C9335F7A97568 /* Pods_Open_Notify_ISS_Times.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D54A18C6204DC9B10026A6E0 /* Build configuration list for PBXNativeTarget "Open-Notify-ISS-Times" */;
 			buildPhases = (
+				66EADE7774618578D7BCA943 /* [CP] Check Pods Manifest.lock */,
 				D54A18B0204DC9B10026A6E0 /* Sources */,
 				D54A18B1204DC9B10026A6E0 /* Frameworks */,
 				D54A18B2204DC9B10026A6E0 /* Resources */,
+				507CADEC0CCE1B8DF926B774 /* [CP] Embed Pods Frameworks */,
+				77AAF634E2EF78C43DCC4CD6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +173,7 @@
 				TargetAttributes = {
 					D54A18B3204DC9B10026A6E0 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -124,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D54A18C2204DC9B10026A6E0 /* LaunchScreen.storyboard in Resources */,
+				D54A18D0204E76ED0026A6E0 /* PassesListViewCellTableViewCell.xib in Resources */,
 				D54A18BF204DC9B10026A6E0 /* Assets.xcassets in Resources */,
 				D54A18BD204DC9B10026A6E0 /* Main.storyboard in Resources */,
 			);
@@ -131,13 +209,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		507CADEC0CCE1B8DF926B774 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Open-Notify-ISS-Times/Pods-Open-Notify-ISS-Times-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Open-Notify-ISS-Times/Pods-Open-Notify-ISS-Times-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66EADE7774618578D7BCA943 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Open-Notify-ISS-Times-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77AAF634E2EF78C43DCC4CD6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Open-Notify-ISS-Times/Pods-Open-Notify-ISS-Times-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D54A18B0204DC9B10026A6E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D54A18CB204E768A0026A6E0 /* Passes.swift in Sources */,
+				D54A18CF204E76ED0026A6E0 /* PassesListViewCellTableViewCell.swift in Sources */,
+				D54A18D8204E94840026A6E0 /* LoadingManager.swift in Sources */,
+				D54A18D3204E77C40026A6E0 /* ViewController+APICalls.swift in Sources */,
 				D54A18BA204DC9B10026A6E0 /* ViewController.swift in Sources */,
 				D54A18B8204DC9B10026A6E0 /* AppDelegate.swift in Sources */,
+				D54A18D6204E91A70026A6E0 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +409,18 @@
 		};
 		D54A18C7204DC9B10026A6E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D3381864BC072F3732B629B /* Pods-Open-Notify-ISS-Times.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8PNQ3RK876;
 				INFOPLIST_FILE = "Open-Notify-ISS-Times/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.akbarAtIBM.com.Open-Notify-ISS-Times";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.msil.telematics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4cffa3cf-96e0-4ba9-b848-2903eb8acb4e";
+				PROVISIONING_PROFILE_SPECIFIER = IBM_MSIL;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,13 +428,18 @@
 		};
 		D54A18C8204DC9B10026A6E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 505B4FCCF67D0C4401591988 /* Pods-Open-Notify-ISS-Times.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8PNQ3RK876;
 				INFOPLIST_FILE = "Open-Notify-ISS-Times/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.akbarAtIBM.com.Open-Notify-ISS-Times";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.msil.telematics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4cffa3cf-96e0-4ba9-b848-2903eb8acb4e";
+				PROVISIONING_PROFILE_SPECIFIER = IBM_MSIL;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

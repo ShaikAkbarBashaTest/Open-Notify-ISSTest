@@ -3,7 +3,7 @@
 //  Open-Notify-ISS-Times
 //
 //  Created by Shaik Akbar Basha on 3/6/18.
-//  Copyright © 2018 IBM. All rights reserved.
+//  Copyright © 2018 Akbar. All rights reserved.
 //
 
 import UIKit
