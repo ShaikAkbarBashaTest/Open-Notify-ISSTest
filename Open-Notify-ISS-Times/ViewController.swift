@@ -23,17 +23,17 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad called")
-        //self.apiCallToGetTheSetOfPasses()
-        
+        // Do any additional setup after loading the view, typically from a nib.
+        //Method to get the device current location.
         determineMyCurrentLocation()
         
-        
+        //registering the PassesListViewCellTableViewCell
         self.passesTableView.register(UINib(nibName: "PassesListViewCellTableViewCell", bundle: nil), forCellReuseIdentifier: cellReuseIdentifier)
+        //Set the passesTableView delegates and Data sources.
         self.passesTableView.delegate = self
         self.passesTableView.dataSource = self
 
         
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,7 +53,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
             //locationManager.startUpdatingHeading()
         }
     }
-    
+    //didUpdateLocations when user allows the app to update the location.
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation:CLLocation = locations[0] as CLLocation
         
@@ -70,25 +70,13 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         
         self.apiCallToGetTheSetOfPasses(latitude: self.deviceLatitude, longtutude: self.deviceLongtitude)
     }
-    
+    //Handle when Error
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
     {
         print("Error \(error)")
     }
 }
-
-//    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-//        if status != .authorizedWhenInUse {return}
-//
-//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-//        locationManager.startUpdatingLocation()
-//        let locValue: CLLocationCoordinate2D = manager.location!.coordinate
-//        print("locations = \(locValue.latitude) \(locValue.longitude)")
-//
-//    }//locationManager func declaration
-
-//}
-
+//Extension to handle UITableView Delegate and Data Source
 extension ViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return settingListItems.count
@@ -100,29 +88,11 @@ extension ViewController:UITableViewDataSource,UITableViewDelegate{
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //Reuse PassesListViewCellTableViewCell
         let cell = tableView.dequeueReusableCell(withIdentifier: "PassesListIdentifier", for: indexPath) as? PassesListViewCellTableViewCell
         let shareLocDetail = self.passesData[indexPath.row]
         cell?.durationLable.text = shareLocDetail.durationInString
         cell?.timeLable.text = shareLocDetail.risetimeInString
-//        if let value  = shareLocDetail.timeType_ID as? String{
-//            if value.contains("Time Based") {
-//                let item = shareLocDetail.timeType_ID.components(separatedBy: " ")
-//                let attrs1 = [NSFontAttributeName : UIFont(name:"Avenir-Book", size:14 ), NSForegroundColorAttributeName :  UIColor(red: 45/255, green: 52/255, blue: 148/255, alpha: 1.0)]
-//                let attrs2 = [NSFontAttributeName : UIFont(name:"Avenir-Book", size:12), NSForegroundColorAttributeName : UIColor.black]
-//                let attributedString1 = NSMutableAttributedString(string:"Time Based", attributes:attrs1)
-//                let attributedString2 = NSMutableAttributedString(string:" \(item[2]) \(item[3])", attributes:attrs2)
-//                attributedString1.append(attributedString2)
-//                print(item)
-//                cell?.timeBasedLable.attributedText = attributedString1
-//            } else {
-//                cell?.timeBasedLable.text = value
-//
-//            }
-//
-//
-//        }
-
-        //let convertedTime = self.convertTheTimeToDate(value: shareLocDetail.timeInSec_ID)
         return cell!
     }
 
