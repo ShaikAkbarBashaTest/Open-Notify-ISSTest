@@ -67,11 +67,13 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         
         print("user latitude = \(userLocation.coordinate.latitude)")
         print("user longitude = \(userLocation.coordinate.longitude)")
-        
-        self.deviceLatitude = String(format: "%f",userLocation.coordinate.latitude)
-        self.deviceLongtitude = String(format: "%f",userLocation.coordinate.longitude)
-        
-        self.apiCallToGetTheSetOfPasses(latitude: self.deviceLatitude, longtutude: self.deviceLongtitude)
+        //didUpdateLocations is getting called many times,To update UI only once this logic is added.
+        if(self.deviceLatitude == ""){
+            self.deviceLatitude = String(format: "%f",userLocation.coordinate.latitude)
+            self.deviceLongtitude = String(format: "%f",userLocation.coordinate.longitude)
+            
+            self.apiCallToGetTheSetOfPasses(latitude: self.deviceLatitude, longtutude: self.deviceLongtitude)
+        }
     }
     //Handle when Error
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
