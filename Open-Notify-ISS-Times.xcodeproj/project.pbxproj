@@ -19,7 +19,18 @@
 		D54A18D3204E77C40026A6E0 /* ViewController+APICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A18D2204E77C40026A6E0 /* ViewController+APICalls.swift */; };
 		D54A18D6204E91A70026A6E0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A18D5204E91A70026A6E0 /* Utils.swift */; };
 		D54A18D8204E94840026A6E0 /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A18D7204E94840026A6E0 /* LoadingManager.swift */; };
+		D54A190D204ED6DC0026A6E0 /* Open_Notify_ISS_TimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A190C204ED6DC0026A6E0 /* Open_Notify_ISS_TimesTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D54A190F204ED6DC0026A6E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D54A18AC204DC9B10026A6E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D54A18B3204DC9B10026A6E0;
+			remoteInfo = "Open-Notify-ISS-Times";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		32C9D525AA3C9335F7A97568 /* Pods_Open_Notify_ISS_Times.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Open_Notify_ISS_Times.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +49,9 @@
 		D54A18D2204E77C40026A6E0 /* ViewController+APICalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+APICalls.swift"; sourceTree = "<group>"; };
 		D54A18D5204E91A70026A6E0 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D54A18D7204E94840026A6E0 /* LoadingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
+		D54A190A204ED6DC0026A6E0 /* Open-Notify-ISS-TimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Open-Notify-ISS-TimesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54A190C204ED6DC0026A6E0 /* Open_Notify_ISS_TimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Open_Notify_ISS_TimesTests.swift; sourceTree = "<group>"; };
+		D54A190E204ED6DC0026A6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +60,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E7B19B48C8E901E87439F31 /* Pods_Open_Notify_ISS_Times.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54A1907204ED6DC0026A6E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				D54A18B6204DC9B10026A6E0 /* Open-Notify-ISS-Times */,
+				D54A190B204ED6DC0026A6E0 /* Open-Notify-ISS-TimesTests */,
 				D54A18B5204DC9B10026A6E0 /* Products */,
 				99183E5B49D8A8FDA9A9841B /* Pods */,
 				F45B3E5F46E8A9C8C3094646 /* Frameworks */,
@@ -75,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				D54A18B4204DC9B10026A6E0 /* Open-Notify-ISS-Times.app */,
+				D54A190A204ED6DC0026A6E0 /* Open-Notify-ISS-TimesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +153,15 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		D54A190B204ED6DC0026A6E0 /* Open-Notify-ISS-TimesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D54A190C204ED6DC0026A6E0 /* Open_Notify_ISS_TimesTests.swift */,
+				D54A190E204ED6DC0026A6E0 /* Info.plist */,
+			);
+			path = "Open-Notify-ISS-TimesTests";
+			sourceTree = "<group>";
+		};
 		F45B3E5F46E8A9C8C3094646 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +193,24 @@
 			productReference = D54A18B4204DC9B10026A6E0 /* Open-Notify-ISS-Times.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D54A1909204ED6DC0026A6E0 /* Open-Notify-ISS-TimesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54A1913204ED6DC0026A6E0 /* Build configuration list for PBXNativeTarget "Open-Notify-ISS-TimesTests" */;
+			buildPhases = (
+				D54A1906204ED6DC0026A6E0 /* Sources */,
+				D54A1907204ED6DC0026A6E0 /* Frameworks */,
+				D54A1908204ED6DC0026A6E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D54A1910204ED6DC0026A6E0 /* PBXTargetDependency */,
+			);
+			name = "Open-Notify-ISS-TimesTests";
+			productName = "Open-Notify-ISS-TimesTests";
+			productReference = D54A190A204ED6DC0026A6E0 /* Open-Notify-ISS-TimesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -174,6 +224,11 @@
 					D54A18B3204DC9B10026A6E0 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Manual;
+					};
+					D54A1909204ED6DC0026A6E0 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D54A18B3204DC9B10026A6E0;
 					};
 				};
 			};
@@ -191,6 +246,7 @@
 			projectRoot = "";
 			targets = (
 				D54A18B3204DC9B10026A6E0 /* Open-Notify-ISS-Times */,
+				D54A1909204ED6DC0026A6E0 /* Open-Notify-ISS-TimesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -204,6 +260,13 @@
 				D54A18D0204E76ED0026A6E0 /* PassesListViewCellTableViewCell.xib in Resources */,
 				D54A18BF204DC9B10026A6E0 /* Assets.xcassets in Resources */,
 				D54A18BD204DC9B10026A6E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54A1908204ED6DC0026A6E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +341,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D54A1906204ED6DC0026A6E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54A190D204ED6DC0026A6E0 /* Open_Notify_ISS_TimesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D54A1910204ED6DC0026A6E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D54A18B3204DC9B10026A6E0 /* Open-Notify-ISS-Times */;
+			targetProxy = D54A190F204ED6DC0026A6E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D54A18BB204DC9B10026A6E0 /* Main.storyboard */ = {
@@ -445,6 +524,36 @@
 			};
 			name = Release;
 		};
+		D54A1911204ED6DC0026A6E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Open-Notify-ISS-TimesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akbar.com.Open-Notify-ISS-TimesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Open-Notify-ISS-Times.app/Open-Notify-ISS-Times";
+			};
+			name = Debug;
+		};
+		D54A1912204ED6DC0026A6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Open-Notify-ISS-TimesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akbar.com.Open-Notify-ISS-TimesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Open-Notify-ISS-Times.app/Open-Notify-ISS-Times";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -462,6 +571,15 @@
 			buildConfigurations = (
 				D54A18C7204DC9B10026A6E0 /* Debug */,
 				D54A18C8204DC9B10026A6E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54A1913204ED6DC0026A6E0 /* Build configuration list for PBXNativeTarget "Open-Notify-ISS-TimesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54A1911204ED6DC0026A6E0 /* Debug */,
+				D54A1912204ED6DC0026A6E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
