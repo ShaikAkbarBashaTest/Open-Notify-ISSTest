@@ -1,10 +1,12 @@
-//
-//  PassesListViewCellTableViewCell.swift
-//  Open-Notify-ISS-Times
-//
-//  Created by Shaik Akbar Basha on 3/6/18.
-//  Copyright © 2018 Akbar. All rights reserved.
-//
+/*
+ Open-Notify-ISS-Times
+ 
+ File: PassesListViewCellTableViewCell.swift
+ 
+ Version: <1.0>
+ 
+ Copyright © 2018 Akbar. All rights reserved.
+ */
 
 import UIKit
 

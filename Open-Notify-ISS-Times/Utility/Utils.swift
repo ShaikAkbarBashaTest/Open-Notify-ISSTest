@@ -1,4 +1,14 @@
 
+/*
+ Open-Notify-ISS-Times
+ 
+ File: Utils
+ 
+ Version: <1.0>
+ 
+ Copyright © 2018 Akbar. All rights reserved.
+ */
+
 import Foundation
 
 //Dev environment
@@ -13,11 +23,7 @@ class Utils {
         }
         return Static.instance
     }
-    
-   
-    
-    
-    
+ 
     func stringFromTimeInterval(value : Int64) -> String {
         
         let days = value / 86400;
@@ -47,7 +53,6 @@ class Utils {
         
         result = result + String(format: "ago")
         
-        //return String(format: "updated: %0.2d days %0.2d hours %0.2d mins %0.2d secs ago",days,hours,minutes,seconds)
         return result
     }
     
