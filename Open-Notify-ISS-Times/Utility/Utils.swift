@@ -27,7 +27,7 @@ class Utils {
         let minutes = abovehours / 60;
         //let seconds = abovehours % 60;
         
-        var result = "Updated: "
+        var result = " "
         
         if days != 0 {
             result = result + String(format: " %d days ",days)

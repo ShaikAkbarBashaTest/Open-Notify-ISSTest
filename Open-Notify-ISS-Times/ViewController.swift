@@ -12,6 +12,7 @@ import CoreLocation
 
 class ViewController: UIViewController,CLLocationManagerDelegate {
 
+    let cellReuseIdentifier = "PassesListIdentifier"
     @IBOutlet var passesTableView: UITableView!
     var locationManager: CLLocationManager!
     var passesData = [] as [PassesModal]
@@ -26,6 +27,10 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         
         determineMyCurrentLocation()
         
+        
+        self.passesTableView.register(UINib(nibName: "PassesListViewCellTableViewCell", bundle: nil), forCellReuseIdentifier: cellReuseIdentifier)
+        self.passesTableView.delegate = self
+        self.passesTableView.dataSource = self
 
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -55,7 +60,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         // Call stopUpdatingLocation() to stop listening for location updates,
         // other wise this function will be called every time when user location changes.
         
-        // manager.stopUpdatingLocation()
+         manager.stopUpdatingLocation()
         
         print("user latitude = \(userLocation.coordinate.latitude)")
         print("user longitude = \(userLocation.coordinate.longitude)")

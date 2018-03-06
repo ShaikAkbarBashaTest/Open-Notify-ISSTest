@@ -13,7 +13,11 @@ extension ViewController {
     
     func apiCallToGetTheSetOfPasses(latitude:String,longtutude:String){
         
-        let urlToGetData  = String(format: "\(baseURL)/lat=%@&lon=%@",latitude,longtutude)
+        if  self.passesData.count>0{
+            self.passesData.removeAll()
+        }
+        
+        let urlToGetData  = String(format: "\(baseURL)lat=%@&lon=%@",latitude,longtutude)
         //let url = URL(string: "http://api.open-notify.org/iss-pass.json?lat=65&lon=165")!
         let url = URL(string: urlToGetData)!
 
@@ -53,6 +57,7 @@ extension ViewController {
 
                 print(self.passesData.count)
                 
+                self.passesTableView.reloadData()
                 //                if let listOfCoordinates = jsonData?.value(forKey: "GPS") as? Array<Any>{
                 //
                 //
