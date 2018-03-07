@@ -7,6 +7,7 @@
 //
 
 import XCTest
+//@testable import Open-Notify-ISS-Times
 
 class Open_Notify_ISS_TimesTests: XCTestCase {
     
