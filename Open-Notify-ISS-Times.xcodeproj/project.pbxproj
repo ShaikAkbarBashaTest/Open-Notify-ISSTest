@@ -491,15 +491,16 @@
 			baseConfigurationReference = 8D3381864BC072F3732B629B /* Pods-Open-Notify-ISS-Times.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 8PNQ3RK876;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Open-Notify-ISS-Times/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.msil.telematics;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbar.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4cffa3cf-96e0-4ba9-b848-2903eb8acb4e";
-				PROVISIONING_PROFILE_SPECIFIER = IBM_MSIL;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -510,15 +511,16 @@
 			baseConfigurationReference = 505B4FCCF67D0C4401591988 /* Pods-Open-Notify-ISS-Times.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 8PNQ3RK876;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Open-Notify-ISS-Times/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.msil.telematics;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbar.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4cffa3cf-96e0-4ba9-b848-2903eb8acb4e";
-				PROVISIONING_PROFILE_SPECIFIER = IBM_MSIL;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
